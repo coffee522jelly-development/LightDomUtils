@@ -217,6 +217,22 @@ class LightDomUtils {
     }
 
     /**
+     * 指定した要素を無効化
+     * @param {HTMLElement} element - 対象の要素
+     */
+    static disable(element) {
+      element.disabled = true;
+    }
+
+    /**
+     * 指定した要素を有効化
+     * @param {HTMLElement} element - 対象の要素
+     */
+    static enable(element) {
+      element.disabled = false;
+    }
+
+    /**
      * 指定した要素の幅、高さ、位置を取得
      * @param {HTMLElement} element - 対象の要素
      * @returns {{ width: number, height: number, top: number, left: number }} 幅、高さ、位置
